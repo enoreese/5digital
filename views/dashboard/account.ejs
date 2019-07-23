@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Zebullon">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Account</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+    <!-- Start of Zoho Pixel Code -->
+    <script type="text/javascript">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "12e03553a69d4e714a7ae23faf354c2e58cb94814109a700817f49173e1b4d03611b3e0f4f0ff9b31f560a7006f750d0", values: {}, ready: function () { $zoho.salesiq.floatbutton.visible('hide'); } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);
+    </script>
+    <!-- End of Zoho Pixel Code -->
+
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '406457143088640'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=406457143088640&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TG7NV3J');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG7NV3J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <% include ../partials/dashboard_sidebar %>
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <% include ../partials/dashboard_header %>
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Account</h2>
+                                    <!-- <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>new project</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <!-- <div class="card-header">
+                                        <strong class="card-title mb-3">Profile Card</strong>
+                                    </div> -->
+                                    <div class="card-body">
+                                        <div class="mx-auto d-block">
+                                            <img class="rounded-circle mx-auto d-block" src="images/icon/avatar-01.jpg"
+                                                alt="Card image cap">
+                                            <h5 class="text-sm-center mt-2 mb-1"><%= currentUser.fullname %></h5>
+                                            <div class="location text-sm-center">
+                                                <i class="fa fa-map-marker"></i> California, United States</div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-text text-sm-center">
+                                            <a href="#">
+                                                <i class="fa fa-facebook pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-twitter pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-linkedin pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-pinterest pr-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Profile</strong> Information
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <form action="" method="post" enctype="multipart/form-data"
+                                            class="form-horizontal">
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">User ID</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <p class="form-control-static">Username</p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Fullname
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="fulname" name="fullname"
+                                                        placeholder="Fullname" class="form-control">
+                                                    <!-- <small class="form-text text-muted">This is a help text</small> -->
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="email-input" class=" form-control-label">Email
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="email" id="email-input" name="email-input"
+                                                        placeholder="Enter Email" class="form-control">
+                                                    <!-- <small class="help-block form-text">Please enter your email</small> -->
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="text-input" class=" form-control-label">Company Name
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="company_name" name="company_name"
+                                                        placeholder="Company Name" class="form-control">
+                                                    <!-- <small class="form-text text-muted">This is a help text</small> -->
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="disabled-input" class=" form-control-label">Disabled
+                                                        Input</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="disabled-input" name="disabled-input"
+                                                        placeholder="Disabled" disabled="" class="form-control">
+                                                </div>
+                                            </div> -->
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="textarea-input" class=" form-control-label">About your
+                                                        Company</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <textarea name="textarea-input" id="textarea-input" rows="9"
+                                                        placeholder="" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="select" class=" form-control-label">Company
+                                                        Sector</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <select name="select" id="select" class="form-control">
+                                                        <option value="0">Please select</option>
+                                                        <option value="1">Option #1</option>
+                                                        <option value="2">Option #2</option>
+                                                        <option value="3">Option #3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="selectLg" class=" form-control-label">Select
+                                                        Large</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <select name="selectLg" id="selectLg"
+                                                        class="form-control-lg form-control">
+                                                        <option value="0">Please select</option>
+                                                        <option value="1">Option #1</option>
+                                                        <option value="2">Option #2</option>
+                                                        <option value="3">Option #3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="selectSm" class=" form-control-label">Select
+                                                        Small</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <select name="selectSm" id="SelectLm"
+                                                        class="form-control-sm form-control">
+                                                        <option value="0">Please select</option>
+                                                        <option value="1">Option #1</option>
+                                                        <option value="2">Option #2</option>
+                                                        <option value="3">Option #3</option>
+                                                        <option value="4">Option #4</option>
+                                                        <option value="5">Option #5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="disabledSelect" class=" form-control-label">Disabled
+                                                        Select</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <select name="disabledSelect" id="disabledSelect" disabled=""
+                                                        class="form-control">
+                                                        <option value="0">Please select</option>
+                                                        <option value="1">Option #1</option>
+                                                        <option value="2">Option #2</option>
+                                                        <option value="3">Option #3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="multiple-select" class=" form-control-label">Multiple
+                                                        select</label>
+                                                </div>
+                                                <div class="col col-md-9">
+                                                    <select name="multiple-select" id="multiple-select" multiple=""
+                                                        class="form-control">
+                                                        <option value="1">Option #1</option>
+                                                        <option value="2">Option #2</option>
+                                                        <option value="3">Option #3</option>
+                                                        <option value="4">Option #4</option>
+                                                        <option value="5">Option #5</option>
+                                                        <option value="6">Option #6</option>
+                                                        <option value="7">Option #7</option>
+                                                        <option value="8">Option #8</option>
+                                                        <option value="9">Option #9</option>
+                                                        <option value="10">Option #10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">Radios</label>
+                                                </div>
+                                                <div class="col col-md-9">
+                                                    <div class="form-check">
+                                                        <div class="radio">
+                                                            <label for="radio1" class="form-check-label ">
+                                                                <input type="radio" id="radio1" name="radios"
+                                                                    value="option1" class="form-check-input">Option 1
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="radio2" class="form-check-label ">
+                                                                <input type="radio" id="radio2" name="radios"
+                                                                    value="option2" class="form-check-input">Option 2
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label for="radio3" class="form-check-label ">
+                                                                <input type="radio" id="radio3" name="radios"
+                                                                    value="option3" class="form-check-input">Option 3
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">Inline Radios</label>
+                                                </div>
+                                                <div class="col col-md-9">
+                                                    <div class="form-check-inline form-check">
+                                                        <label for="inline-radio1" class="form-check-label ">
+                                                            <input type="radio" id="inline-radio1" name="inline-radios"
+                                                                value="option1" class="form-check-input">One
+                                                        </label>
+                                                        <label for="inline-radio2" class="form-check-label ">
+                                                            <input type="radio" id="inline-radio2" name="inline-radios"
+                                                                value="option2" class="form-check-input">Two
+                                                        </label>
+                                                        <label for="inline-radio3" class="form-check-label ">
+                                                            <input type="radio" id="inline-radio3" name="inline-radios"
+                                                                value="option3" class="form-check-input">Three
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">Checkboxes</label>
+                                                </div>
+                                                <div class="col col-md-9">
+                                                    <div class="form-check">
+                                                        <div class="checkbox">
+                                                            <label for="checkbox1" class="form-check-label ">
+                                                                <input type="checkbox" id="checkbox1" name="checkbox1"
+                                                                    value="option1" class="form-check-input">Option 1
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label for="checkbox2" class="form-check-label ">
+                                                                <input type="checkbox" id="checkbox2" name="checkbox2"
+                                                                    value="option2" class="form-check-input"> Option 2
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label for="checkbox3" class="form-check-label ">
+                                                                <input type="checkbox" id="checkbox3" name="checkbox3"
+                                                                    value="option3" class="form-check-input"> Option 3
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">Inline Checkboxes</label>
+                                                </div>
+                                                <div class="col col-md-9">
+                                                    <div class="form-check-inline form-check">
+                                                        <label for="inline-checkbox1" class="form-check-label ">
+                                                            <input type="checkbox" id="inline-checkbox1"
+                                                                name="inline-checkbox1" value="option1"
+                                                                class="form-check-input">One
+                                                        </label>
+                                                        <label for="inline-checkbox2" class="form-check-label ">
+                                                            <input type="checkbox" id="inline-checkbox2"
+                                                                name="inline-checkbox2" value="option2"
+                                                                class="form-check-input">Two
+                                                        </label>
+                                                        <label for="inline-checkbox3" class="form-check-label ">
+                                                            <input type="checkbox" id="inline-checkbox3"
+                                                                name="inline-checkbox3" value="option3"
+                                                                class="form-check-input">Three
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="file-input" class=" form-control-label">File
+                                                        input</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="file" id="file-input" name="file-input"
+                                                        class="form-control-file">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="file-multiple-input"
+                                                        class=" form-control-label">Multiple File input</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="file" id="file-multiple-input"
+                                                        name="file-multiple-input" multiple=""
+                                                        class="form-control-file">
+                                                </div>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            <i class="fa fa-dot-circle-o"></i> Submit
+                                        </button>
+                                        <button type="reset" class="btn btn-danger btn-sm">
+                                            <i class="fa fa-ban"></i> Reset
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Change</strong> Password
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <form action="" method="post" enctype="multipart/form-data"
+                                            class="form-horizontal">
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="password-input"
+                                                        class=" form-control-label">Password</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="password" id="password-input" name="password-input"
+                                                        placeholder="Password" class="form-control">
+                                                    <small class="help-block form-text">Please enter a complex
+                                                        password</small>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="password-input"
+                                                        class=" form-control-label">Confirm Password</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="password" id="password-input" name="password-input"
+                                                        placeholder="Confirm Password" class="form-control">
+                                                    <small class="help-block form-text">Confirm above password</small>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            <i class="fa fa-dot-circle-o"></i> Submit
+                                        </button>
+                                        <button type="reset" class="btn btn-danger btn-sm">
+                                            <i class="fa fa-ban"></i> Reset
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="mx-auto d-block">
+                                            <img class="rounded-circle mx-auto d-block" src="images/icon/avatar-01.jpg"
+                                                alt="Card image cap">
+                                            <h5 class="text-sm-center mt-2 mb-1">Steven Lee</h5>
+                                            <div class="location text-sm-center">
+                                                <i class="fa fa-map-marker"></i> California, United States</div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-text text-sm-center">
+                                            <a href="#">
+                                                <i class="fa fa-facebook pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-twitter pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-linkedin pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-pinterest pr-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <strong class="card-title mb-3">Profile Card</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fa fa-user"></i>
+                                        <strong class="card-title pl-2">Profile Card</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mx-auto d-block">
+                                            <img class="rounded-circle mx-auto d-block" src="images/icon/avatar-01.jpg"
+                                                alt="Card image cap">
+                                            <h5 class="text-sm-center mt-2 mb-1">Steven Lee</h5>
+                                            <div class="location text-sm-center">
+                                                <i class="fa fa-map-marker"></i> California, United States</div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-text text-sm-center">
+                                            <a href="#">
+                                                <i class="fa fa-facebook pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-twitter pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-linkedin pr-1"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-pinterest pr-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <aside class="profile-nav alt">
+                                    <section class="card">
+                                        <div class="card-header user-header alt bg-dark">
+                                            <div class="media">
+                                                <a href="#">
+                                                    <img class="align-self-center rounded-circle mr-3"
+                                                        style="width:85px; height:85px;" alt=""
+                                                        src="images/icon/avatar-01.jpg">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h2 class="text-light display-6">Jim Doe</h2>
+                                                    <p>Project Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <i class="fa fa-envelope-o"></i> Mail Inbox
+                                                    <span class="badge badge-primary pull-right">10</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <i class="fa fa-tasks"></i> Recent Activity
+                                                    <span class="badge badge-danger pull-right">15</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <i class="fa fa-bell-o"></i> Notification
+                                                    <span class="badge badge-success pull-right">11</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <i class="fa fa-comments-o"></i> Message
+                                                    <span class="badge badge-warning pull-right r-activity">03</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </section>
+                                </aside>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card with switch</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card with Label
+                                            <small>
+                                                <span class="badge badge-success float-right mt-1">Success</span>
+                                            </small>
+                                        </strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card with Label
+                                            <small>
+                                                <span class="badge badge-danger float-right mt-1">49</span>
+                                            </small>
+                                        </strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <div class="card border border-primary">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card Outline</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card border border-secondary">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card Outline</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card border border-success">
+                                    <div class="card-header">
+                                        <strong class="card-title">Card Outline</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <div class="card bg-danger">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Integer posuere erat
+                                                a ante.</p>
+                                            <footer class="blockquote-footer text-light">Someone famous in
+                                                <cite title="Source Title">Source Title</cite>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card bg-warning">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0 text-light">
+                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Integer posuere erat
+                                                a ante.</p>
+                                            <footer class="blockquote-footer text-light">Someone famous in
+                                                <cite title="Source Title">Source Title</cite>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0 text-light">
+                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Integer posuere erat
+                                                a ante.</p>
+                                            <footer class="blockquote-footer text-light">Someone famous in
+                                                <cite title="Source Title">Source Title</cite>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-secondary">
+                                        <strong class="card-title text-light">Card Header</strong>
+                                    </div>
+                                    <div class="card-body text-white bg-primary">
+                                        <p class="card-text text-light">Some quick example text to build on the card
+                                            title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-dark">
+                                        <strong class="card-title text-light">Card Header</strong>
+                                    </div>
+                                    <div class="card-body text-white bg-danger">
+                                        <p class="card-text text-light">Some quick example text to build on the card
+                                            title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header bg-success">
+                                        <strong class="card-title text-light">Card Header</strong>
+                                    </div>
+                                    <div class="card-body text-white bg-warning">
+                                        <p class="card-text text-light">Some quick example text to build on the card
+                                            title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3">Card Image Title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3">Card Image Title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3">Card Image Title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's
+                                            content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTAINER-->
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

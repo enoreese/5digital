@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Projects</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+    <!-- Start of Zoho Pixel Code -->
+    <script type="text/javascript">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "12e03553a69d4e714a7ae23faf354c2e58cb94814109a700817f49173e1b4d03611b3e0f4f0ff9b31f560a7006f750d0", values: {}, ready: function () { $zoho.salesiq.floatbutton.visible('hide'); } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);
+    </script>
+    <!-- End of Zoho Pixel Code -->
+
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '406457143088640'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=406457143088640&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TG7NV3J');</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG7NV3J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <% include ../partials/dashboard_sidebar %>
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <% include ../partials/dashboard_header %>
+            
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">projects</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal"
+                                        data-target="#scrollmodal">
+                                        <i class="zmdi zmdi-plus"></i>new project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <div class="row m-t-30">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>date</th>
+                                                <th>project ID</th>
+                                                <th>name</th>
+                                                <th class="text-right">status</th>
+                                                <th class="text-right">price</th>
+                                                <th class="text-right">project cordinator</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <% if (user.projects.length > 0){ %>
+                                            <tr>
+                                                <%    user.projects.forEach((project) => { %>
+                                                <td><%= project.created.toLocaleString() %></td>
+                                                <td><%= project.projectId %></td>
+                                                <td><%= project.title %></td>
+                                                <td class="process"><%= project.status %></td>
+                                                <td><%= project.price %></td>
+                                                <td><%= project.projectCordinator %></td>
+                                                <%    })    %>
+                                            </tr>
+                                            <%    } else {   %>
+
+                                            <%   }   %>
+
+
+                                            <!-- <tr>
+                                                <td>2018-09-28 01:22</td>
+                                                <td>Mobile</td>
+                                                <td>Samsung S8 Black</td>
+                                                <td class="process">Processed</td>
+                                                <td>$756.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>Game</td>
+                                                <td>Game Console Controller</td>
+                                                <td class="denied">Denied</td>
+                                                <td>$22.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-26 23:06</td>
+                                                <td>Mobile</td>
+                                                <td>iPhone X 256Gb Black</td>
+                                                <td class="denied">Denied</td>
+                                                <td>$1199.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-25 19:03</td>
+                                                <td>Accessories</td>
+                                                <td>USB 3.0 Cable</td>
+                                                <td class="process">Processed</td>
+                                                <td>$10.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>Accesories</td>
+                                                <td>Smartwatch 4.0 LTE Wifi</td>
+                                                <td class="denied">Denied</td>
+                                                <td>$199.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-24 19:10</td>
+                                                <td>Camera</td>
+                                                <td>Camera C430W 4k</td>
+                                                <td class="process">Processed</td>
+                                                <td>$699.00</td>
+                                                <td>$756.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-22 00:43</td>
+                                                <td>Computer</td>
+                                                <td>Macbook Pro Retina 2017</td>
+                                                <td class="process">Processed</td>
+                                                <td>$10.00</td>
+                                                <td>$756.00</td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2019 Zebullon. All rights reserved</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal scroll -->
+            <div class="modal fade" id="scrollmodal" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="scrollmodalLabel">Create New Project</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="new-project" action="/projects" method="post" enctype="multipart/form-data"
+                                class="form-horizontal">
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Project Title
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="title" name="title" placeholder="Title"
+                                            class="form-control">
+                                        <!-- <small class="form-text text-muted">This is a help text</small> -->
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="textarea-input" class=" form-control-label">About your
+                                            Project</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <textarea name="projectDescription" id="projectDescription" rows="5"
+                                            placeholder="" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Project Type</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="select" id="select" class="form-control">
+                                            <option value="0">Please select</option>
+                                            <option value="1">Option #1</option>
+                                            <option value="2">Option #2</option>
+                                            <option value="3">Option #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label class=" form-control-label">
+                                            Is this a new or existing project?
+                                        </label>
+                                    </div>
+                                    <div class="col col-md-9">
+                                        <div class="form-check">
+                                            <div class="radio">
+                                                <label for="radio1" class="form-check-label ">
+                                                    <input type="radio" id="new_project" name="radios"
+                                                        value="new_project" class="form-check-input">New
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label for="radio2" class="form-check-label ">
+                                                    <input type="radio" id="existing_project" name="radios"
+                                                        value="existing_project" class="form-check-input">Existing
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label class=" form-control-label">
+                                            How soon do you want us to start?
+                                        </label>
+                                    </div>
+                                    <div class="col col-md-9">
+                                        <div class="form-check">
+                                            <div class="radio">
+                                                <label for="radio1" class="form-check-label ">
+                                                    <input type="radio" id="start_now" name="radios-2" value="start_now"
+                                                        class="form-check-input">Now
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label for="radio2" class="form-check-label ">
+                                                    <input type="radio" id="1_week" name="radios-2" value="1_week"
+                                                        class="form-check-input">1 Week
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label for="radio2" class="form-check-label ">
+                                                    <input type="radio" id="1_month" name="radios-2" value="1_month"
+                                                        class="form-check-input">1 Month
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label for="radio2" class="form-check-label ">
+                                                    <input type="radio" id="2_months" name="radios-2" value="2_months"
+                                                        class="form-check-input">2 Months
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button id="submit-new-project" type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal scroll -->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+    <script type='text/javascript' >
+        $(document).ready(function () {
+            $('#submit-new-project').click(function (event) { 
+                $('#new-project').submit()
+            });
+        });
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

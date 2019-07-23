@@ -1,0 +1,267 @@
+/* ================================================================
+                            Load for all CSS
+                           Piko constructon html v1.0
+                     -------------------------------
+        if use master slider css setting for revolution slider
+=================================================================== */
+@import url(../../plugin/plugin-css/plugin.min.css); /*Important plugin css*/
+@import url(../../plugin/font-awesome/css/font-awesome.min.css); /*important font awesome*/
+@import url(../style.min.css); /*Important main style css*/
+
+/*========================================
+        color configure
+
+    Background Color scream
+=========================================*/
+/*light link color*/
+a{color: #141414;}
+a:hover, a:focus{color: #45bf55;}
+a:hover { text-decoration: none;}
+a:active { color: #666; text-decoration: none;}
+mark{ color: #fff; font-weight: 600;}
+
+mark, .piko-layout-header .piko-topbar .piko-brand .tooltip.bottom .tooltip-inner,
+.piko-layout-header .piko-topbar .piko-top-menu .tooltip.bottom .tooltip-inner,
+.piko-layout-header .piko-navbar .piko-mega-menu.piko-mega-menu-light > .nav.navbar-nav > li .dropdown-menu > li.piko-active > a,
+.piko-layout-header .piko-navbar .piko-mega-menu.piko-mega-menu-light > .nav.navbar-nav > li .dropdown-menu > li:hover > a,
+
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li> a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):after,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):after,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):after,
+.piko-layout-header.piko-hover .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):after,
+.piko-layout-header.piko-hover02 .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover02 .piko-navbar .piko-mega-menu > .nav.navbar-nav > li> a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover02 .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.piko-layout-header.piko-hover02 .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > a:not(.btn):not(.piko-btn-icon):not(.piko-quick-sidebar-toggler):before,
+.owl-theme .owl-controls.clickable .owl-buttons div:hover,
+.slide-title-medium-bg,
+.media-boxes-filter>li a.selected,
+.thumbnail-overlay i.fa:hover,
+.piko-title4 .line,
+.piko-title5 .line,
+.piko-title6 hr,
+.get-quote,
+.owl-theme .owl-controls .owl-page span,
+footer,
+.social-effect-1b .social-icon:after,
+.font0,
+.wedo-effect h2,
+.team1 .box .title, .team1 .box .title2,
+.team1 .box .title:after,
+.team1 .box .title2:after,
+.team1 .box figcaption i,
+.btn-m5.gray:hover,
+.btn-s5.gray2:hover,
+.btn-s5.orange,
+.btn-s1,
+.box > .icon-box > .image,
+.social,
+.social-04,
+.font17.orange:hover,
+.piko-aware,
+.btn-bounce-top:before,
+#grid2.img-up .thumbnail-overlay,
+.box-squre,
+.btn-s5.gray:hover,
+.btn-xs3,
+.btn-warning,
+.list-group a:hover, .list-group a:focus, .list-group a:active,
+.heading-line,
+.timeline li.event:nth-child(odd)::after,
+li.event:nth-child(even)::before,
+.carrer-image a:hover h3,
+.nav-tabs li a:hover, .tooltips2.orange li a span, .bg-color-orange,
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover,
+.ribbon, .btn-s2, .btn-s4, .btn-m1, .btn-m3, .btn-lg3, .btn-lg5.gray:hover,
+.btn-s3, .btn-overline-center:before, .btn-underline-reveal:before, .btn-overline-reveal:before, .btn-s1.gray:hover,
+.btn-m4, .btn-bounce-right:before, .btn-bounce-left:before, .btn-bounce-bottom:before, .btn-underline-left:before, .btn-underline-center:before, .btn-overline-left:before,
+.btn-lg1, .btn-pulse:hover, .btn-pulse:focus, .btn-pulse:active, .btn-sweep-to-right:before, .btn-sweep-to-left:before, .btn-sweep-to-bottom:before, .btn-sweep-to-top:before,
+.btn-lg2, .btn-lg4, .btn-m2, .btn-lg1.small, btn-lg3, .btn-justified1 .justfied-hover,
+.shop-qty a:last-child,
+.blog-view .blog figure figcaption p:first-child,
+/*.ui-progress4,*/
+.flip-01-back, .flip-02-back, .flip-03-back,
+.pricing-box4 h4,
+.thumbnail .ribbon-corner,
+.quick-view:hover, .quick-view2:hover,
+.piko-title6.two hr,
+.blog_date,
+.badge,
+.back-top,
+.blog_date2 p:first-child,
+.btn-s5.gray3:hover,
+.pricing-box3 h4,
+.f-line, .f-line2,
+.recent-project .title hr,
+.recent-project figure .project-link{
+    background-color: #45bf55;
+}
+/*========================================
+    Font Color scream
+=========================================*/
+.testimonial-01 .quote,
+.piko-hr-title,
+.piko-title9 h3 mark,
+.testimonials p span, .testimonials-03 p span,
+.counter7 i,
+.piko-address  i,
+.piko-layout-header.piko-layout-header-03 .piko-navbar .piko-mega-menu > .nav.navbar-nav > li > .piko-btn-icon.cart i,
+.box > .icon-box > .image,
+.box > .icon-box > .image > i,
+.piko-title4 h3 mark,
+ul.arrow li:before,
+footer .link.white a:hover,
+.count-box.black,
+.piko-aware-control2 li a span i,
+.icon.big,
+/*.media-body .fa,*/
+.ms-staff-carousel .ms-staff-info.email,.ms-staff-info p i,
+.breadcrumb > li + li:before,
+.fa-ul li i,
+.gallery a span,
+.accordion-toggle:after,
+.panel-group3 .accordion-toggle:after,
+.project-view .left-side ul li i,
+.shop-page small i,
+.media .media-body .shop-rate i,
+.box-c > .icon-box > .image span,
+.font5,
+.tabs-style3 ul li a i,
+.btn-m5, .btn-lg4.white, .btn-lg5, .btn-s5,
+.big_text1 i, .result,
+.counter2 i, .flip-04-back h5 a:hover, .orange,
+.thumbnail > .caption > a:hover,
+.team1 .box .caption a:hover,
+.piko-layout-header .piko-topbar .piko-top-menu > .piko-links > li > a:hover i,
+.footer2-box .media a:hover,
+.process .process-icon,
+.font17.orange,
+#filter>li.selected,
+.shop-page a:hover i,
+.blog-comment .media .media-body h4 a:hover,
+.page-banner .breadcrumb a:hover,
+.counter3 .one.two i, .counter3 .one.three i, .counter3 .one.two, .counter3 .one.four i, .counter3 .one.four, .counter3 .one{
+    color: #45bf55;
+}
+/*========================================
+    Border Color scream
+=========================================*/
+.box-c > .icon-box > .info:hover,
+.box > .icon-box > .info:hover,
+.signle-box > .icon-box > .image,
+.process img,
+.title .control a,
+.tabulous_active,
+.btn-m5.gray:hover, .btn-lg6,
+.btn-s5.gray:hover, .btn-lg5, .btn-s5.gray2:hover,
+.testimonials-03 p,
+.font17.orange,
+.piko-title9 hr:after,
+.timeline li.year,
+.timeline li.event,
+.carer-banner,
+.form-control:focus,
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover,
+/*.blog-view .blog figure figcaption p:last-child,*/
+.blog-view .blog figure figcaption p:first-child,
+.font5,
+.tabs-style2 .tabulous_active, .blog-tabs .tabulous_active,
+.piko-divider11 hr:after,
+.tooltips2.orange li a span,
+.btn-cart:hover,
+.counter3 .one.three, .counter3 .one.three i, .counter3 .one.four i,
+.btn-lg5.gray:hover,
+#filter>li.selected:before,
+.tp-bullets.preview4 .bullet,
+.tp-bullets.simplebullets .bullet:hover, .tp-bullets.simplebullets .bullet.selected,
+.btn-s5.orange{
+    border-color: #45bf55;
+}
+
+.testimonials-03 p:after{
+    border-bottom-color: #45bf55;
+}
+/* ======================================
+        Dark Bankground Color(quote)
+========================================= */
+.get-quote-bg,
+.social-effect-1a .social-icon:after,
+.btn-warning:hover,
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover,
+.btn-xs3 span,
+.btn-s3 span{
+    background-color: #45bf55;
+}
+
+/* =================================================
+    OPTIONAL:  Box Background color (vision)
+=================================================== */
+
+.partner,
+.signle-box > .icon-box > .info,
+.box > .icon-box > .info ,
+.internship,
+.image-round .thumbnail,
+.image-round2 .thumbnail,
+.image-round3 .thumbnail,
+.team-04 .thumbnail,
+.team-04 .thumbnail.team5,
+.panel-info > .panel-heading,
+div.price2,
+.thumbnail-overlay i{
+    background-color: #f4f4f4;
+}
+
+/*========================================
+    OPTIONAL: Border Color
+=========================================*/
+.box-c > .icon-box > .image,
+.box-c > .icon-box > .info,
+.piko-li,
+.piko-thub,
+.wedo,
+.team1 .box .caption,
+.box > .icon-box > .info,
+.piko-divider7,
+.team-04{
+    border-color: #f4f4f4;
+}
+
+/* ============================
+     RGBA color
+============================== */
+.box-c > .icon-box > .image:after,
+.testimonials p{
+    background-color: rgba(255,255,255,.5);
+}
+
+
+/* ============================
+     Background color
+============================== */
+.image-round2 .thumbnail .caption,
+.piko-thub{
+    background-color: #fff
+}
+
+.box > .icon-box > .image:after{
+    background-color: #fcfcfc;
+}
+/* ============================
+     border shadow
+============================== */
+
+.box > .icon-box > .image {
+    box-shadow: 0 0 0 3px #45bf55;
+}
+@media (max-width: 991px) {
+    .piko-layout-header .piko-navbar .piko-mega-menu.piko-mega-menu-light-mobile > .nav.navbar-nav > li .dropdown-menu > li.piko-active > a,
+    .piko-layout-header .piko-navbar .piko-mega-menu.piko-mega-menu-light-mobile > .nav.navbar-nav > li .dropdown-menu > li:hover > a{
+        color: #45bf55;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,71 @@
+.text-black{
+    color: #262626;
+}
+
+.affa-panel-group .panel-default .panel-heading .panel-title a.digital_links{
+    color: #f26300 !important;
+}
+
+.affa-panel-group .panel-default .panel-heading .panel-title a.digital_links:hover{
+    color: #262626 !important;
+}
+
+.parallax-mirror {
+    z-index:1
+}
+
+#middle-wizard {
+    padding: 30px 0 30px 50px;
+}
+
+#wizard_container {
+    margin-top: 15px;
+    padding: 30px;
+}
+
+#top-wizard {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e8ebed;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px
+}
+
+#middle-wizard {
+    padding: 30px;
+}
+
+#bottom-wizard {
+    text-align: right;
+    padding: 15px 0 0;
+    border-top: 1px solid #e8ebed
+}
+
+@media (max-width: 991px) {
+    #wizard_container {
+        border-left: 0
+    }
+    #middle-wizard {
+        padding: 15px 0
+    }
+}
+
+.hover { background-color:#f7f7f7 }
+.clicked { background-color:#ffe5fc }
+
+.progress-bar-purple{background-color:#a10067}
+
+.btn-purple{
+    background-color:#a10067;
+    color: #fff;
+}
+
+.btn-purple:hover{
+    background: #78004f;
+    color: #fff;
+}
+
+#header .sub-header .breadcrumbs a:hover{
+    color: #960090;
+}
