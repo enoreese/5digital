@@ -71,6 +71,10 @@ router.get('/print-media', (req, res, next) => {
   res.render('main/services/print_media');
 })
 
+router.get('/thank-you-smgk', (req, res, next) => {
+  res.render('main/landing_pages/thank_you');
+})
+
 //CONTACT US
 router.route('/contact')
   .get((req, res, next) => {
@@ -128,7 +132,15 @@ router.get('/confirm/branding', (req, res, next) => {
 
 // Landing page
 router.get('/free-social-media-graphic-kit', (req, res, next) => {
-  res.render('main/free-social-media-graphic-kit');
+  res.render('main/landing_pages/free-social-media-graphic-kit');
+})
+
+router.get('/free-social-media-graphic-kit-d', (req, res, next) => {
+  res.render('main/landing_pages/free-social-media-graphics-kit-dollar');
+})
+
+router.get('/free-social-media-graphic-kit-n', (req, res, next) => {
+  res.render('main/landing_pages/free-social-media-graphic-kit-naira');
 })
 
 //CAREER
