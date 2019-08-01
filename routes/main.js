@@ -88,7 +88,7 @@ router.route('/contact')
 
     sgMail.setApiKey(sendGridKey);
     const msg = {
-      to: 'hello@5digitalmarketing.com',
+      to: 'mosesazorbo@yahoo.com',
       from: 'no-reply@5digital.com',
       subject: 'New Project Application',
       html: '<p>Hello,\n\n' + 'A user withe following query has contacted you: \n Here are details: \n\n' +
