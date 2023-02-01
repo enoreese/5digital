@@ -20,7 +20,7 @@
     "express": "^4.16.4",
     "express-flash": "0.0.2",
     "express-session": "^1.15.6",
-    "mongoose": "^5.3.7",
+    "mongoose": "^5.13.15",
     "mongoose-deep-populate": "^3.1.1",
     "morgan": "^1.9.1",
     "mssql": "^5.0.3",
